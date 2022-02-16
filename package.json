@@ -1,0 +1,25 @@
+{
+  "name": "solana-escrow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emersonliuuu/first-escrow-program.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emersonliuuu/first-escrow-program/issues"
+  },
+  "homepage": "https://github.com/emersonliuuu/first-escrow-program#readme",
+  "dependencies": {
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.34.0",
+    "bn.js": "^5.2.0"
+  }
+}
