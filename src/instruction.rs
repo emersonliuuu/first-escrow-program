@@ -1,9 +1,8 @@
-use std::convert::TryInto;
-use solana_program::program_error::ProgramError;
 use crate::error::EscrowError::InvalidInstruction;
+use solana_program::program_error::ProgramError;
+use std::convert::TryInto; // solve error by implement method in error.rs
 
 pub enum EscrowInstruction {
-
     /// Starts the trade by creating and populating an escrow account and transferring ownership of the given temp token account to the PDA
     ///
     ///
@@ -17,8 +16,8 @@ pub enum EscrowInstruction {
     /// 5. `[]` The token program
     InitEscrow {
         /// The amount party A expects to receive of token Y
-        amount: u64
-    }
+        amount: u64,
+    },
 }
 
 impl EscrowInstruction {
